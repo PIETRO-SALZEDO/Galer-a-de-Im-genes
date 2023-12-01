@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria de Imagenes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="dropdown">
+      <button class="dropbtn">Menú</button>
+      <button onclick="mostrarImagenes('thumbnail')" class="home">Reset</button>
+      <div class="dropdown-content">
+        <a href="#" onclick="mostrarImagenes('carros')">Opción 1</a>
+        <a href="#" onclick="mostrarImagenes('bosques')">Opción 2</a>
+        <a href="#" onclick="mostrarImagenes('motos')">Opción 3</a>
+        <a href="#" onclick="mostrarImagenes('cicla')">Opción 4</a>
+        <a href="#" onclick="mostrarImagenes('bus')">Opción 5</a>
+        <a href="#" onclick="mostrarImagenes('thumbnail')">Opción 6</a>
+      </div>
+    </header>
+    <div class="galeria">
+      <img
+        src="https://images.pexels.com/photos/7555440/pexels-photo-7555440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="imagen1"
+        class="thumbnail carros"
+      />
+      <img
+        src="https://images.pexels.com/photos/17115145/pexels-photo-17115145/free-photo-of-a-road-in-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="imagen2"
+        class="thumbnail bosques"
+      />
+      <img
+        src="https://images.pexels.com/photos/10547152/pexels-photo-10547152.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="imagen3"
+        class="thumbnail motos"
+      />
+      <img
+        src="https://images.pexels.com/photos/9150080/pexels-photo-9150080.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1i"
+        alt="imagen4"
+        class="thumbnail cicla"
+      />
+      <img
+        src="https://images.pexels.com/photos/17996288/pexels-photo-17996288/free-photo-of-montana-ushba-en-el-cielo-despejado-de-verano.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="imagen5"
+        class="thumbnail bus"
+      />
+    </div>
+    <div class="lightbox">
+      <span class="close">&times;</span>
+      <button class="prev-button">Anterior</button>
+      <img class="lightbox-image" src="" alt="imagen ampliada" />
+      <button class="next-button">Siguiente</button>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
